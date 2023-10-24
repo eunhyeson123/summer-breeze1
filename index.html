@@ -67,37 +67,37 @@
          
      }
  
-    
+ 
      #menu{
         width: 100px;
         float: left;
      }
 
-     #pic11{
-        display: inline;
-        padding-left: 500px;
-      padding-top: 300px;
 
-     }
-     #text{
-        position: absolute;
-        text-align: center; 
-        left : 950px; 
-        top : 300px;
-        line-height: 2.5;
-        font-size: 17px;
-        text-align: left;
-        width: 400px;
-        font-family: 'Noto Sans KR', sans-serif;
-        color: #3b3b3b;
-     }
+     .slider_wrap{
+        width:100%;
+        max-width:1000px; 
+        height: 700px; 
+        margin:0 auto;
+        padding-left: 200px;
+    }
+     
 
-  
+
 
  </style>
+ 
+
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.css" rel="stylesheet" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
+
+
 
 </head>
 
@@ -108,39 +108,41 @@
              <img src="images/abc.png" alt="" width="170px"> 
         
           </div>
-         
+        
             
      </header>
      <div id="menu">
         <nav>    
             <ul>
                <li><a href="">ABOUT</a></li>
-               <li><a href="">MENU</a></li>
+               <li><a href="https://summerbreeze4.netlify.app/">MENU</a></li>
                <li><a href="">SHOP</a></li>
                <li><a href="">COMPANY</a></li>
             </ul>
         </nav>
         </div>
-        
-        <div id="pic11">
-            <img src="images/pic12.png" alt="" width="400px">
-    
-          <div id="text">
-            <p>우리가 완성하려는 한 잔의 커피, 한조각의 빵, 한그릇
-               의 음식에 썸머브리즈(Summer Breeze)가 추구하는
-               스페셜티 가치를 담습니다. 산지에서 가장 좋은 원재료를
-                찾는 것이 스페셜티 미식의 시작입니다. 
-            </p>
-            <p>
-             We put the specialty value that Summer 
-             Breeze pursues into a cup of coffee, 
-             a slice of bread, and a bowl of food 
-             that we are trying to complete. Finding the 
-             best raw materials from the production area 
-             is the beginning of specialty gastronomy.
-            </p>
-          </div>
-      
+
+          <div class="slider_wrap">
+            <ul class="my_bxslider" >
+               <li><img src="images/slide1.png" ></li>
+               <li><img src="images/slide2.png" ></li>
+               <li><img src="images/slide1.png"></li>
+            </ul>
+         </div>
+
+
+
+         <script type="text/javascript">
+            $(document).ready(function(){
+                $('.my_bxslider').bxSlider({
+                   pager: false,
+                   mode: 'fade',
+                   captions: false,
+           
+                });
+            });
+        </script>
+            
 </body>
 
 
