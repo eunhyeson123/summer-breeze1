@@ -80,8 +80,7 @@
         height: 700px; 
         margin:0 auto;
         padding-left: 200px;
-        border: 0;
-        box-shadow: none;
+   
     }
      
 
@@ -124,7 +123,7 @@
         </div>
 
           <div class="slider_wrap">
-            <ul class="my_bxslider" >
+            <ul class="bxslider" >
                <li><img src="images/slide1.png" ></li>
                <li><img src="images/slide2.png" ></li>
                <li><img src="images/slide1.png"></li>
@@ -135,14 +134,24 @@
 
          <script type="text/javascript">
             $(document).ready(function(){
-                $('.my_bxslider').bxSlider({
+                $('.bxslider').bxSlider({
                    pager: false,
                    mode: 'fade',
                    captions: false,
+                   
            
                 });
             });
         </script>
+              <style>
+               .bx-wrapper {
+                   border: 0;
+                   background: #fbfbfb;
+                   box-shadow: none;
+               }
+            </style>
+   
+          
             
 </body>
 
